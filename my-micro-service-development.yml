@@ -1,9 +1,9 @@
-spring:
-  application:
-    name: my-micro-service
+feign:
+  hystrix:
+    enabled: true
 
-server:
-  port: 0
-  
-user:
-  role: ADMIN
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
